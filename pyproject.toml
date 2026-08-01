@@ -1,4 +1,4 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
@@ -17,7 +17,7 @@ dependencies = [
   "scipy>=1.12.0",
   "pydantic>=2.6.0",
   "pyyaml>=6.0.1",
-  "tqdm>=4.66.0",
+  "tqdm>=4.66.0"
 ]
 
 [project.optional-dependencies]
@@ -27,11 +27,11 @@ dev = [
   "ruff>=0.5.0",
   "black>=24.0.0",
   "mypy>=1.10.0",
-  "pre-commit>=3.7.0",
+  "pre-commit>=3.7.0"
 ]
 docs = [
   "mkdocs>=1.6.0",
-  "mkdocs-material>=9.5.0",
+  "mkdocs-material>=9.5.0"
 ]
 
 [tool.setuptools]
@@ -50,7 +50,6 @@ target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "N", "C4", "SIM"]
-ignore = []
 
 [tool.mypy]
 python_version = "3.10"
